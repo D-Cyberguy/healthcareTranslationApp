@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Translation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Translation Web App</h1>
+
+        <!-- Language Selection Dropdowns -->
+        <div class="language-selection">
+            <label for="input-language">Input Language:</label>
+            <select id="input-language"></select>
+
+            <label for="output-language">Output Language:</label>
+            <select id="output-language"></select>
+        </div>
+
+        <!-- Buttons for Recording, Stopping, and Speaking the Translation -->
+        <div class="buttons">
+            <button id="start-recording">🎤 Start Recording</button>
+            <button id="stop-recording">⏹ Stop Recording</button>
+            <button id="speak-translation">🔊 Speak</button>
+        </div>
+
+        <!-- Dual Transcript Display -->
+        <div class="dual-transcript">
+            <div class="column">
+                <h3>Original Transcript</h3>
+                <textarea id="transcript" readonly></textarea>
+            </div>
+            <div class="column">
+                <h3>Translated Transcript</h3>
+                <textarea id="translation" readonly></textarea>  <!-- Non-editable -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Speech Recognition & Translation -->
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
