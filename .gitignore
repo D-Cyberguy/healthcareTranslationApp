@@ -1,9 +1,19 @@
+# Ignore environment and secret files
 .env
 .env.local
+
+# Python dependencies
 __pycache__/
-.vscode/
-my_env/
 *.pyc
 *.pyo
-.DS_Store
+
+# Virtual environment
+my_env/
 .venv/
+
+# OS-specific files
+.DS_Store
+
+# Ignore Vercel deployment files
+.vercel/
+.cache/
