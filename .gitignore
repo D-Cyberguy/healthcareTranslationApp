@@ -1,50 +1,5 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environment (venv)
-venv/
 .env
-*.env
-*.venv
-Pipfile
-Pipfile.lock
-
-# Dependencies
-*.log
-*.sqlite3
-instance/
-db.sqlite3
-migrations/
-
-# Flask cache files
-.cache/
+__pycache__/
 *.pyc
 *.pyo
-*.pyd
-*.db
-*.db-journal
-
-# Jupyter Notebooks
-.ipynb_checkpoints/
-
-# Ignore IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.swn
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# Ignore deployment files
-*.tar.gz
-*.zip
-
-# Secret Keys & API Keys
-config.py
-settings.py
-secrets.json
